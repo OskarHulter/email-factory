@@ -1,0 +1,22 @@
+{
+  "name": "email-factory",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "db-test": "bun run src/db/index.ts",
+    "db-seed": "bun run src/db/seed.ts",
+    "db-schema": "bunx drizzle-kit generate:sqlite --schema ./src/schema.ts",
+    "db-migrate": "bun run src/db/migrate.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.6",
+    "drizzle-kit": "^0.20.14",
+    "juice": "^10.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.29.4"
+  }
+}
