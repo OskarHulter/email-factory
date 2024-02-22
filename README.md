@@ -1,5 +1,8 @@
 # email-factory
 
+## tools
+https://litmus.com/builder/ac11b59
+
 ## references
 https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/
 

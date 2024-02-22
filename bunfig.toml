@@ -1,0 +1,17 @@
+[define]
+DO_NOT_TRACK=1
+[test]
+preload = "./happydom.ts"
+[install.scopes]
+# registry as string
+"@myorg1" = "https://username:password@registry.myorg.com/"
+
+# registry with username/password
+# you can reference environment variables
+"@myorg2" = { username = "myusername", password = "$NPM_PASS", url = "https://registry.myorg.com/" }
+
+# registry with token
+"@myorg3" = { token = "$npm_token", url = "https://registry.myorg.com/" }
+
+[install.lockfile]
+print = "yarn"

@@ -3,12 +3,19 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "typecheck": "tsc --noEmit",
+    "format": "bunx @biomejs/biome format --write ./src",
+    "lint": "bunx @biomejs/biome check --apply ./src",
+    "lint-check": "bunx @biomejs/biome lint ./src",
+    "lint-ci": "bunx @biomejs/biome ci ./src",
     "db-test": "bun run src/db/index.ts",
     "db-seed": "bun run src/db/seed.ts",
     "db-schema": "bunx drizzle-kit generate:sqlite --schema ./src/db/schema.ts",
     "db-migrate": "bun run src/db/migrate.ts"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "@happy-dom/global-registrator": "^13.4.1",
     "@types/bun": "^1.0.6",
     "drizzle-kit": "^0.20.14",
     "juice": "^10.0.0"
