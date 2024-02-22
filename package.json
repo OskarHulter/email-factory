@@ -5,7 +5,7 @@
   "scripts": {
     "db-test": "bun run src/db/index.ts",
     "db-seed": "bun run src/db/seed.ts",
-    "db-schema": "bunx drizzle-kit generate:sqlite --schema ./src/schema.ts",
+    "db-schema": "bunx drizzle-kit generate:sqlite --schema ./src/db/schema.ts",
     "db-migrate": "bun run src/db/migrate.ts"
   },
   "devDependencies": {
