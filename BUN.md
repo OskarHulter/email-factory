@@ -1,13 +1,5 @@
 # Bun API tips
 
-## Set environment variables
-
-```ts
-Bun.env.API_TOKEN; // => "secret"
-process.env.API_TOKEN; // => "secret"
-```
-
-
 ## Read environment variables
 
 ```ts
