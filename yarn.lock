@@ -3,7 +3,7 @@
 # bun ./bun.lockb --hash: 1D37926F2CDCB183-b38e562473411798-835B35DC5A9AF0D8-2dc1236d45a14b86
 
 
-"@biomejs/biome@^1.5.3":
+"@biomejs/biome@1.5.3":
   version "1.5.3"
   resolved "https://registry.npmjs.org/@biomejs/biome/-/biome-1.5.3.tgz"
   integrity sha512-yvZCa/g3akwTaAQ7PCwPWDCkZs3Qa5ONg/fgOUT9e6wAWsPftCjLQFPXBeGxPK30yZSSpgEmRCfpGTmVbUjGgg==
