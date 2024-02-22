@@ -1,5 +1,5 @@
 import juice from 'juice'
-
+// https://automattic.github.io/juice/
 const html = "<style>div{color:red;}</style><div/>"
 const options = {}
 const css = 'div{color:red;}'
