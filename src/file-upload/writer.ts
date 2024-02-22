@@ -4,10 +4,10 @@ const server = Bun.serve({
     const url = new URL(req.url)
 
     // return index.html for root path
-    if (url.pathname === "/")
-      return new Response(Bun.file("index.html"), {
+    if (url.pathname === '/')
+      return new Response(Bun.file('index.html'), {
         headers: {
-          "Content-Type": "text/html",
+          'Content-Type': 'text/html',
         },
       })
 
@@ -20,10 +20,10 @@ const server = Bun.serve({
       // write profilePicture to disk
       await Bun.write(`${name}.png`, profilePicture.toString())
       await Bun.write(Bun.stdout, profilePicture.toString()) // To write a file to stdout
-      return new Response("Success")
+      return new Response('Success')
     }
 
-    return new Response("Not Found", { status: 404 })
+    return new Response('Not Found', { status: 404 })
   },
 })
 

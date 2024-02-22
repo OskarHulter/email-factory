@@ -4,14 +4,14 @@ const server = Bun.serve({
     const url = new URL(req.url)
 
     // return index.html for root path
-    if (url.pathname === "/")
-      return new Response(Bun.file("index.html"), {
+    if (url.pathname === '/')
+      return new Response(Bun.file('index.html'), {
         headers: {
-          "Content-Type": "text/html",
+          'Content-Type': 'text/html',
         },
       })
 
-    return new Response("Not Found", { status: 404 })
+    return new Response('Not Found', { status: 404 })
   },
 })
 

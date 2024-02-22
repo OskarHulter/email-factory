@@ -1,6 +1,6 @@
 const rewriter = new HTMLRewriter()
 
-rewriter.on("*", {
+rewriter.on('*', {
   element(el) {
     console.log(el.tagName) // "body" | "div" | ...
   },
@@ -18,4 +18,5 @@ rewriter.transform(
   <h1>My First Heading</h1>
   <p>My first paragraph.</p>
 </body>
-`))
+`),
+)

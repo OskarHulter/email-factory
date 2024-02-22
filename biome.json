@@ -4,7 +4,7 @@
     "enabled": true
   },
   "linter": {
-    "enabled": false
+    "enabled": true
   },
   "javascript": {
     "parser": {
@@ -13,7 +13,7 @@
     "formatter": {
       "arrowParentheses": "asNeeded",
       "quoteProperties": "preserve",
-      "semicolons": "always",
+      "semicolons": "asNeeded",
       "trailingComma": "all",
       "indentStyle": "space",
       "quoteStyle": "single"
@@ -45,12 +45,7 @@
     "indentStyle": "space",
     "ignore": [
       "node_modules/**",
-      "test/snapshots",
-      "test/fixtures",
-      "./build-*",
-      "./build",
-      ".cache",
-      "out/"
+      ".cache"
     ]
   }
 }

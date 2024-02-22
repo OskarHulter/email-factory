@@ -1,5 +1,5 @@
-import { test, expect } from "bun:test"
+import { expect, test } from 'bun:test'
 
-test("snapshot", () => {
-  expect({ foo: "bar" }).toMatchSnapshot()
+test('snapshot', () => {
+  expect({ foo: 'bar' }).toMatchSnapshot()
 })
