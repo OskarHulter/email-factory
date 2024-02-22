@@ -3,10 +3,9 @@ export default {
     const OLD_URL = "developer.mozilla.org"
     const NEW_URL = "mynewdomain.com"
 
-    class AttributeRewriter extends HTMLRewiterElementHandler {
+    class AttributeRewriter {
       attributeName: string
       constructor(attributeName: string) {
-        super()
         this.attributeName = attributeName
       }
       element(element: { tagName: any; getAttribute: (arg0: string) => any; setAttribute: (arg0: string, arg1: any) => void }) {
@@ -19,13 +18,6 @@ export default {
             attribute.replace(OLD_URL, NEW_URL)
           )
         }
-      }
-      comments(comment: Element) {
-        console.log("🚀 ~ AttributeRewriter ~ comments ~ comment:", comment.textContent)
-      }
-
-      text(text: Element) {
-        console.log("🚀 ~ AttributeRewriter ~ text ~ text:", text.textContent)
       }
     }
 
