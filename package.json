@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "email-factory",
   "module": "index.ts",
   "type": "module",
