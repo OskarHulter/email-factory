@@ -16,5 +16,4 @@ jobs:
       - run: bun run src/snippets/rewriter.ts
       - run: bun run src/inliner/inliner.ts
       - run: bun run src/snippets/html-rewriter.ts
-      - run: bun run src/snippets/link-rewriter.ts
       - run: bun run src/snippets/rewrite-links.ts
