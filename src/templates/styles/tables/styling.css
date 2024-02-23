@@ -1,0 +1,43 @@
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+/* Type styles for all clients */
+h1 {
+ font-family: Helvetica, Arial, serif;
+}
+
+/* Type styles for WebKit clients */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  h1 {
+    font-family: Pacifico, Helvetica, Arial, serif !important;
+  }
+}
+
+table {
+  cellpadding: 0;
+  cellspacing: 0;
+  border: 0; 
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+/* Target webkit via media query */
+.special-webkit-element {
+  display: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .special-webkit-element {
+    display: block !important;
+  }
+}
+img {
+  border: 0;
+  width: "50px";
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  display: block;
+}

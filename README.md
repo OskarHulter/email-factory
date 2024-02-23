@@ -68,4 +68,25 @@ Inserted inside the opening <td> tag is the inline CSS that styles the table cel
 </table>
 ```
 
+## Images in email
+
+When inserting images remember to include the following attributes or risk them breaking in different clients:
+
+- `src`
+- `alt`
+- `width`
+- `height`
+- `border`
+
 tip: fontsize medium or fontsize max.
+
+When using tables, don’t forget `border="0" cellpadding="0" cellspacing="0"`.
+
+- `<table>` instead of `<div>`,
+- `#FFFFFF` instead of `#FFF`,
+- `padding` instead of `margin`,
+- CSS2 instead of CSS3,
+- HTML4 instead of HTML5,
+- `background-color` instead of `background`,
+- HTML attributes instead of CSS,
+- inline CSS instead of style sheets or `<style>` blocks.
