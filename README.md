@@ -70,5 +70,6 @@ https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-emai
 
 https://litmus.com/builder/ac11b59
 
-If this guide didn't cure your doubts, always remember:
-"You have to let it all go, Neo. Fear, doubt, and disbelief. Free your mind."
+Still doubting your email skills? "You have to let it all go, Neo. Fear, doubt, and disbelief. Free your mind."
+
+Oskar Hulter
