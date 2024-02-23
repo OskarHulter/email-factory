@@ -12,6 +12,10 @@ h1 {
     font-family: Pacifico, Helvetica, Arial, serif !important;
   }
 }
+.layout-container {
+  max-width: 500px;
+  width: 100%;
+}
 
 table {
   cellpadding: 0;

@@ -6,17 +6,9 @@ https://litmus.com/builder/ac11b59
 ## references
 https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/
 
-## Framework candidates
-mjml
+## intro to ghost-table layouts
 
-https://maizzle.com/
-
-
-HTML emails were traditionally developed using <table> elements, and only <table> elements. But now there are better ways. The fact is, only Microsoft Outlook requires you to use tables for HTML structure; all other email and webmail clients support the use of <div>s for this purpose.
-
-Divs have several advantages over tables. They’re more flexible to work with, supporting CSS properties that tables don’t (such as float), and unlike tables, they don’t create issues for subscribers using assistive technologies such as screen readers.
-
-A <table> element (table)
+A <table> element
 A <tr> element (table row)
 A <td> element (table data cell, or as it’s more commonly referred to, a table cell)
 
@@ -68,6 +60,17 @@ Inserted inside the opening <td> tag is the inline CSS that styles the table cel
 </table>
 ```
 
+## responsive layout: FLUID
+
+The easiest solution is to stick to a single column and make your emails fluid. This means that as the viewport shrinks, your content area shrinks.
+
+```css
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+```
+
 ## Images in email
 
 When inserting images remember to include the following attributes or risk them breaking in different clients:
@@ -78,11 +81,27 @@ When inserting images remember to include the following attributes or risk them 
 - `height`
 - `border`
 
-tip: fontsize medium or fontsize max.
+# RESPONSIVE IMAGES
+As mentioned, use Retina images at 1.5× to 3×, and set image dimensions inline.
 
-When using tables, don’t forget `border="0" cellpadding="0" cellspacing="0"`.
+```html
+<img src="https://www.smashingmagazine.com/wp-content/uploads/2016/11/logo.png" height="100" width="600" alt="Company Logo" style="max-width: 100%;">
+```
+
+We can’t rely on max-width: 100%; because some clients ignore it. You will also want to embed the following CSS:
+
+```css
+@media only screen and (max-width: 620px) {
+  img {
+    height: auto !important;
+    max-width: 100% !important;
+    width: auto !important;
+  }
+}
+```
 
 - `<table>` instead of `<div>`,
+- when using tables, don’t forget `border="0" cellpadding="0" cellspacing="0"`.
 - `#FFFFFF` instead of `#FFF`,
 - `padding` instead of `margin`,
 - CSS2 instead of CSS3,
@@ -90,3 +109,4 @@ When using tables, don’t forget `border="0" cellpadding="0" cellspacing="0"`.
 - `background-color` instead of `background`,
 - HTML attributes instead of CSS,
 - inline CSS instead of style sheets or `<style>` blocks.
+- consider fontsize medium or fontsize max to avoid zoom
