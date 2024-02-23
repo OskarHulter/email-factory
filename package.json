@@ -10,6 +10,7 @@
     "lint": "bunx @biomejs/biome check --apply ./src",
     "lint-check": "bunx @biomejs/biome lint ./src",
     "lint-ci": "bunx @biomejs/biome ci ./src",
+    "db-setup": "bun db-seed && bun db-migrate && bun db-test ",
     "db-test": "bun run src/db/index.ts",
     "db-seed": "bun run src/db/seed.ts",
     "db-schema": "bunx drizzle-kit generate:sqlite --schema ./src/db/schema.ts",
