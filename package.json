@@ -31,6 +31,10 @@
     "@orama/orama": "^2.0.8",
     "drizzle-orm": "^0.29.4"
   },
+  "engines": {
+    "node": "20.11.1",
+    "yarn": "4.1.0"
+  },
   "volta": {
     "node": "20.11.1",
     "yarn": "4.1.0"
