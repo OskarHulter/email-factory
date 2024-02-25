@@ -21,6 +21,7 @@
     "@happy-dom/global-registrator": "^13.4.1",
     "@types/bun": "^1.0.6",
     "drizzle-kit": "^0.20.14",
+    "inline-css": "^4.0.2",
     "juice": "^10.0.0",
     "typescript": "^5.3.3"
   },

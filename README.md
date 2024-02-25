@@ -10,6 +10,8 @@ Welcome to the mystical realm of legacy email clients.
 
 ## Quick guide
 
+Write CSS in the css files, then inline the styles using inline-css when you're ready.
+
 Get started with these tips:
 - `<table>` instead of `<div>`,
 - when using tables, don’t forget `border="0" cellpadding="0" cellspacing="0"`.
