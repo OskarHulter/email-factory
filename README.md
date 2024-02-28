@@ -1,12 +1,12 @@
 # An introduction to email layout
 
-This is your last chance. 
-After this, there is no turning back. 
+This is your last chance.
+After this, there is no turning back.
 
-You close this tab - the story ends, you wake up in your bed and believe whatever you want to believe. 
+You close this tab - the story ends, you wake up in your bed and believe whatever you want to believe.
 You continue on - you stay in Wonderland and I show you how deep the rabbit hole goes.
 
-Welcome to the mystical realm of legacy email clients. 
+Welcome to the mystical realm of legacy email clients.
 
 ## Quick guide
 
@@ -39,7 +39,8 @@ Images should include the following attributes:
 - A <tr> element (table row) as horizontal divider
 - A <td> element (table data cell) as child
 
-```html 
+```
+
 <table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
     <tr>
         <td width="100%" style="font-family:Arial, sans-serif; font-size:16px; line-height:1.5em; color:#333333; padding:2em; background-color:#e4e4e4;">
@@ -49,8 +50,10 @@ Images should include the following attributes:
         </td>
     </tr>
 </table>
+
 ```
 
+```
 Inserted inside the opening <table> tag are the table attributes: role, cellpadding, cellspacing, and border. The attributes are defined as follows:
 
 - role="presentation": defines the <table> as being presentational, preventing it from creating issues for subscribers using assistive technologies such as screen readers.
@@ -59,6 +62,8 @@ Inserted inside the opening <table> tag are the table attributes: role, cellpadd
 - border="0": removes the default borders, preventing borders from appearing in the table.
 
 Inserted inside the opening <td> tag is the inline CSS that styles the table cell (the <td>) and its content. The text styling will be inherited by all the paragraphs within the <td>, unless the paragraphs themselves have inline CSS overriding those styles inside their respective opening <p> tags. The style margin:0; is applied inside each opening <p> tag to remove the default spacing applied to paragraphs.
+
+  ```
 
 ### tools
 
@@ -72,6 +77,7 @@ https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-emai
 
 https://litmus.com/builder/ac11b59
 
-Still doubting your email skills? "You have to let it all go, Neo. Fear, doubt, and disbelief. Free your mind."
+### Still doubting your email skills?
+"You have to let it all go, Neo. Fear, doubt, and disbelief. Free your mind."
 
 Oskar Hulter
