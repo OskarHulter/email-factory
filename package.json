@@ -1,16 +1,17 @@
 {
-  "$schema": "https://json.schemastore.org/package",
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "email-factory",
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "sso": "aws sso login --sso-session=sln-signals",
     "validate": "bun typecheck && bun lint && bun format && bun test",
     "typecheck": "tsc --noEmit",
     "format": "bunx @biomejs/biome format --write ./src",
     "lint": "bunx @biomejs/biome check --apply ./src",
     "lint-check": "bunx @biomejs/biome lint ./src",
     "lint-ci": "bunx @biomejs/biome ci ./src",
-    "db-setup": "bun db-seed && bun db-migrate && bun db-test ",
+    "db-setup": "bun db-seed && bun db-migrate && bun db-test",
     "db-test": "bun run src/db/index.ts",
     "db-seed": "bun run src/db/seed.ts",
     "db-schema": "bunx drizzle-kit generate:sqlite --schema ./src/db/schema.ts",
@@ -30,7 +31,8 @@
   },
   "dependencies": {
     "@orama/orama": "^2.0.8",
-    "drizzle-orm": "^0.29.4"
+    "drizzle-orm": "^0.29.4",
+    "sst": "2.40.6"
   },
   "engines": {
     "node": "20.11.1",
@@ -39,5 +41,6 @@
   "volta": {
     "node": "20.11.1",
     "yarn": "4.1.0"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
