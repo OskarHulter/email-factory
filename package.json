@@ -4,8 +4,13 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "styleuse": "doiuse --browsers 'ie >= 9, > 1%, last 2 versions' main.css --json",
+    "styleuse-cat": "cat main.css | doiuse --browsers 'ie >= 9, > 1%, last 2 versions'",
     "sso": "aws sso login --sso-session=sln-signals",
     "validate": "bun typecheck && bun lint && bun format && bun test",
+    "lint-styles": "bunx stylelint '**/*.{css,scss,less}'",
+    "stylelint-find-rules": "stylelint-find-new-rules [options] <file>",
+    "autoprefix": "bunx postcss postcss-cli autoprefixer",
     "typecheck": "tsc --noEmit",
     "format": "bunx @biomejs/biome format --write ./src",
     "lint": "bunx @biomejs/biome check --apply ./src",
@@ -19,11 +24,29 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.5.3",
+    "@csstools/postcss-rebase-url": "^1.0.6",
     "@happy-dom/global-registrator": "^13.4.1",
-    "@types/bun": "^1.0.6",
+    "@types/bun": "latest",
+    "autoprefixer": "^10.4.18",
+    "doiuse": "^6.0.2",
     "drizzle-kit": "^0.20.14",
     "inline-css": "^4.0.2",
     "juice": "^10.0.0",
+    "open-props": "^1.6.20",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "postcss-html": "^1.6.0",
+    "postcss-import": "^16.0.1",
+    "postcss-jit-props": "^1.0.14",
+    "postcss-load-config": "^5.0.3",
+    "postcss-plugin": "^1.0.0",
+    "postcss-preset-env": "^9.4.0",
+    "postcss-ts-classnames": "^0.3.0",
+    "posthtml": "^0.16.6",
+    "posthtml-postcss": "^1.0.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard": "^36.0.0",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
@@ -32,7 +55,7 @@
   "dependencies": {
     "@orama/orama": "^2.0.8",
     "drizzle-orm": "^0.29.4",
-    "sst": "2.40.6"
+    "stylelint-find-new-rules": "^5.0.0"
   },
   "engines": {
     "node": "20.11.1",

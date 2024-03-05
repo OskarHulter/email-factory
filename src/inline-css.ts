@@ -8,7 +8,6 @@ inlineCss(html, {
   extraCss: 'div{color:blue;}',
   applyWidthAttributes: true,
   applyTableAttributes: true,
-
 }).then((html: Todo) => {
   console.log(html)
 })
