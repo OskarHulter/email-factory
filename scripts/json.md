@@ -1,6 +1,9 @@
 # JSON
 
+## Usecase
+
 - for compatability https://jqlang.github.io/jq/tutorial/
+- for interactivity https://jqplay.org/ 
 - for useability https://fx.wtf/ 
 
 ## JSON Processing
