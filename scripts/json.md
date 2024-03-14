@@ -1,5 +1,8 @@
 # JSON
 
+- for compatability https://jqlang.github.io/jq/tutorial/
+- for useability https://fx.wtf/ 
+
 ## JSON Processing
 
 In fx, arguments are treated as JavaScript functions. Input data is passed sequentially through each provided function:
