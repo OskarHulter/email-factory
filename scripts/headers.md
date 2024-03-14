@@ -1,5 +1,14 @@
 # HTTP headers
 
+## Default behavior
+
+If your command includes some data request items, they are serialized as a JSON object by default. HTTPie also automatically sets the following headers, both of which can be overwritten:
+
+- Header	Value
+- Content-Type	application/json
+- Accept	application/json, */*;q=0.5
+
+
 To set custom headers you can use the Header:Value notation:
 
 http pie.dev/headers User-Agent:Bacon/1.0 'Cookie:valued-visitor=yes;foo=bar' \
@@ -13,6 +22,7 @@ Host: pie.dev
 Referer: https://httpie.org/
 User-Agent: Bacon/1.0
 X-Foo: Bar
+
 Default request headers
 There are a couple of default headers that HTTPie sets:
 
