@@ -30,6 +30,8 @@ The -R flag tells less to interpret color escape sequences included HTTPie’s o
 
 ```sh
 
+# less
+
 http --pretty=all --verbose pie.dev/get | less -R
 
 ```
@@ -37,7 +39,9 @@ http --pretty=all --verbose pie.dev/get | less -R
 
 ```sh
 
+# fx
 
+http --pretty=all --verbose pie.dev/get | fx -R
 
 ```
 

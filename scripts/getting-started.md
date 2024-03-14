@@ -47,8 +47,6 @@ http GET https://api.github.com/repos/httpie/cli | http POST pie.dev/post
 
 ```
 
-
-
 You can use cat to enter multiline data on the terminal:
 
 ```sh
@@ -63,17 +61,12 @@ cat | http POST pie.dev/post Content-Type:text/plain
 
 ```
 
-
-
-
 On macOS, you can send the contents of the clipboard with pbpaste:
 ```sh
 
 pbpaste | http PUT pie.dev/put
 
 ```
-
-
 
 
 Passing data through stdin can’t be combined with data fields specified on the command line:
