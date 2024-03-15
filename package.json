@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "@orama/orama": "^2.0.8",
+    "@astrojs/db": "^0.8.5",
     "drizzle-orm": "^0.29.4",
     "stylelint-find-new-rules": "^5.0.0"
   },
